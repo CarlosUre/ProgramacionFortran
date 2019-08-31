@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Movimiento de proyectiles}
+\author{Carlos David Ureña Pérez }
+\date{30 de agosto del 2019}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduccion}
+
+El movimiento de proyectil es una forma de movimiento que experimenta un objeto o partícula (un proyectil ) que se arroja cerca de la superficie de la Tierra y se mueve a lo largo de una trayectoria curva solo bajo la acción de la gravedad (en particular, se supone que los efectos de la resistencia del aire son insignificantes ) Galileo demostró que este camino curvo es una parábola.
+
+\begin{wrapfigure}
+\begin{center}
+\includegraphics[height=5cm]{a.jpeg}
+\end{center}
+\end{wrapfigure}
+\caption{Ejemplo de tiro parabólico}
+\centering
+
+\section{Tiempo de vuelo}
+El tiempo de vuelo total que el proyectil permanece en movimiento.
+Para encontrar esto, tenemos en cuenta que y=0 cuando el cuerpo llega al suelo.
+\begin{equation}
+t=\frac{2vo\sin(\alpha)}{g}
+\end{equation}\
+En el ejemplo que veremos a continuación se vio la trayectoria de un proyectil desde una altura 0, con un ángulo del disparo de 45 y una velocidad inicial de 12m/s:
+\begin{wrapfigure}
+\begin{center}
+\includegraphics[height=5cm]{tiempo de vuelo.jpeg}
+\end{center}
+\end{wrapfigure}
+Como se puede observar en el ejemplo el tiempo total del recorrido del proyectil es de 1.73 segundos.
+\section{Alcance máximo o rango del proyectil}
+El alcance máximo es la distancia horizontal que recorre el proyectil. Obtenemos la ecuación al sustituir la expresión del tiempo de movimiento en la ecuacion de la coordenada x:
+\begin{equation}
+    x=voxt=vo \cos (\alpha) \frac{2vo\sin (\alpha)}{g}=\frac{2vo^2\sin (\alpha)\cos(\alpha)}{g}
+\end{equation}
+Y utilizando la relación trigonométrica \sin 2\alpha=2\sin \alpha \cos \alpha , resulta:
+\\
+\begin{equation}
+    x=\frac{vo^2}{g}\sin 2 \alpha
+\end{equation}
+\section{Altura máxima}
+La altura máxima de un proyectil lanzado se alcanza cuando vy=0. De aquí podemos obtener el valor de t.
+\begin{equation}
+    t=\frac{voy}{g}=\frac{vo\sin (\alpha)}{g}
+\end{equation}
+Sustituimos este valor en la ecuación de la coordenada y:
+\begin{equation}
+    ymax=voyt-\frac{1}{2}gt^2=\frac{vo^2\sin ^2 \alpha}{g}-\frac{vo^2 \sin ^2 \alpha}{2g}
+\end{equation}
+\begin{equation}
+    ymax=\frac{vo^2\sin ^2 \alpha}{2g}
+\end{equation}
+La altura máxima que se puede obtener cuando se dispara un proyectil solo se puede obtener cuando en este caso el "cañón" se encuentra a 90 grados, como se puede observar en el siguiente ejemplo:
+\begin{wrapfigure}
+\includegraphics[height=5cm]{aa.jpeg}
+\end{wrapfigure}
+En esta primera imagen vemos que el cañón tiene una inclinación de 90 grados y una velocidad inicial de 20m/s y como resultado logra alcanzar una altura de 20.39m
+\begin{wrapfigure}
+\includegraphics[height=5cm]{aaa.jpeg}
+\end{wrapfigure}
+Caso contrario tenemos este disparo del cañón con una inclinación de 45 grados y con la misma velocidad inicial de 20m/s. Como resultado en el punto más alto de la parábola generada por el recorrido su altura es de solo 10.19m
+
+\section{Referencias}
+\begin{enumerate}
+    \item Proyectile motion - Wikipedia: https://en.wikipedia.org/wiki/Projectile-motion
+    \item Tiro Parabolico - Descartes 2D: http://recursostic.educacion.es/descartes/web/materiales-didacticos/comp-movimientos/parabolico.htm
+    
+\end{enumerate}
+\end{document}
